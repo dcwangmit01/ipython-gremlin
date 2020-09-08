@@ -166,7 +166,7 @@ class ResultSet(list):
             self._add_edge(e)
 
     def _add_vertex(self, v):
-        self._graph.add_node(v.id, {'label': v.label})
+        self._graph.add_node(v.id, label=v.label)
 
     def _add_edge(self, e):
         self._add_vertex(e.outV)
